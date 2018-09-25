@@ -86,10 +86,6 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
 
   * Create a line chart which graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
 
-## Submission
-
-* To submit please save the excel workbook to <https://www.dropbox.com/> then create a sharable link and submit the link to <https://bootcampspot-v2.com/>.
-
 - - -
 
 ### Copyright
