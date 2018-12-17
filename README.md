@@ -1,6 +1,6 @@
-# Excel-Kickstarter-Chart
+# Kickstarter Crowd Funding Chart
 
-## Unit 1 | Assignment - KickStart My Chart
+## Files
 
 * Original File: StarterBook-unsolved.xlsx
 * Solution Files: 
@@ -11,13 +11,12 @@
 
 Over two billion dollars have been raised using the massively successful crowdfunding service, Kickstarter, but not every project has found success. Of the over 300,000 projects launched on Kickstarter, only a third have made it through the funding process with a positive outcome.
 
-Since getting funded on Kickstarter requires meeting or exceeding the project's initial goal, many organizations spend months looking through past projects in an attempt to discover some trick to finding success. For this week's homework, you will organize and analyze a database of four thousand past projects in order to uncover any hidden trends.
+Since getting funded on Kickstarter requires meeting or exceeding the project's initial goal, many organizations spend months looking through past projects in an attempt to discover some trick to finding success. This project organized and analyzed a database of four thousand past projects in order to uncover any hidden trends.
 
-## Instructions
+## Steps
 
 ![Kickstarter Table](Images/FullTable.PNG)
 
-* Using the Excel table provided, you will be modifying and analyzing the data of four thousand past Kickstarter projects as you attempt to uncover some of the market trends.
 
 * Use conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was "successful," "failed," "cancelled," or is currently "live".
 
@@ -51,19 +50,19 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
 
   * Create a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
 
-  * Now create a pivot chart line graph that visualizes this new table.
+  * Create a pivot chart line graph that visualizes this new table.
 
-* Create a report in Microsoft Word and answer the following questions...
+* A report in Microsoft Word was creted to answer the following questions...
 
 1. What are three conclusions we can make about Kickstarter campaigns given the provided data?
 2. What are some of the limitations of this dataset?
 3. What are some other possible tables/graphs that we could create?
 
-## Bonus
+## Additional Analysis
 
-* Create a new sheet with 8 columns: `Goal`, `Number Successful`, `Number Failed`, `Number Canceled`, `Total Projects`, `Percentage Successful`, `Percentage Failed`, and `Percentage Canceled`
+* A new sheet with 8 columns were created, they are: `Goal`, `Number Successful`, `Number Failed`, `Number Canceled`, `Total Projects`, `Percentage Successful`, `Percentage Failed`, and `Percentage Canceled`
 
-  * In the `goal` column, create twelve rows with the following headers...
+  * In the `goal` column, twelve rows were created with the following headers...
 
     * Less Than 1000
     * 1000 to 4999
@@ -80,14 +79,8 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
 
     ![Goal Outcomes](Images/GoalOutcomes.PNG)
 
-  * Using the `COUNTIFS()` formula, count how many successful, failed, and canceled projects were created with goals within those ranges listed above. Populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
+  * The total successful, failed, and canceled projects that were create with goals within those ranges listed above were counted. The `Number Successful`, `Number Failed`, and `Number Canceled` columns were populated with this data.
 
-  * Add up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematic formulae, find the percentage of projects which were successful, failed, or were canceled per goal range.
+  * Each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns were added to populate the `Total Projects` column. Then, using a mathematic formulae, the percentage of projects which were successful, failed, or were canceled per goal range were found.
 
-  * Create a line chart which graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
-
-- - -
-
-### Copyright
-
-Trilogy Education Services © 2017. All Rights Reserved.
+  * A line chart which graphs the relationship between a goal's amount and its chances at success, failure, or cancellation were created.
