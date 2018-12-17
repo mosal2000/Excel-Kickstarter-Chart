@@ -3,7 +3,7 @@
 ## Files
 
 * Original File: StarterBook-unsolved.xlsx
-* Solution Files: 
+* Final Files: 
   * StarterBook-Solution.xlsx
   * Starterbook-Answers.docx
 
@@ -18,41 +18,41 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
 ![Kickstarter Table](Images/FullTable.PNG)
 
 
-* Use conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was "successful," "failed," "cancelled," or is currently "live".
+* Using conditional formatting, each cell in the `state` column was filled with a different color, depending on whether the associated campaign was "successful," "failed," "cancelled," or is currently "live".
 
-* Create a new column at column O called `percent funded` that uses a formula to uncover how much money a campaign made towards reaching its initial goal.
+* A new column was created at column O called `percent funded` that uses a formula to uncover how much money a campaign made towards reaching its initial goal.
 
-  * Use conditional formatting to fill each cell in the `percent funded` column using a three-color scale. The scale should start at 0 and be a dark shade of red, transitioning to green at 100, and then moving towards blue at 200.
+  * Using conditional formatting, each cell in the `percent funded` column was filled using a three-color scale. The scale starts at 0 and be a dark shade of red, transitioning to green at 100, and then moving towards blue at 200.
 
-* Create a new column at column P called `average donation` that uses a formula to uncover how much each backer for the project paid on average.
+* A new column was created at column P called `average donation` that uses a formula to uncover how much each backer for the project paid on average.
 
-* Create two new columns, one called `category` at Q and another called `sub-category` at R, which use formulas to split the `Category and Sub-Category` column into two parts.
+* Two new columns were created, one called `category` at Q and another called `sub-category` at R, which use formulas to split the `Category and Sub-Category` column into two parts.
 
   ![Category Stats](Images/CategoryStats.PNG)
 
-  * Create a new sheet with a pivot table that will analyze your initial worksheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **category**.
+  * A new sheet was created with a pivot table that analyze the initial worksheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **category**.
 
-    * Create a stacked column pivot chart that can be filtered by `country` based on the table you have created.
+    * A stacked column pivot chart was create that can be filtered by `country` based on the table you have created.
 
   ![Subcategory Stats](Images/SubcategoryStats.PNG)
 
-  * Create a new sheet with a pivot table that will analyze your initial sheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **sub-category**.
+  * A new sheet with a pivot table was created that will analyze the initial sheet to count how many campaigns were "successful," "failed," "cancelled," or are currently "live" per **sub-category**.
 
-    * Create a stacked column pivot chart that can be filtered by `country` and `parent-category` based on the table you have created.
+    * A stacked column pivot chart was created that can be filtered by `country` and `parent-category` based on the table that has been created.
 
-* The dates stored within the `deadline` and `launched_at` columns are using unix timestamps. Fortunately for us, [there is a formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) out there that can be used to convert these timestamps into a normal date.
+* The dates stored within the `deadline` and `launched_at` columns are using unix timestamps. [A formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) was used to convert these timestamps into a normal date.
 
-  * Create a new column named `Date Created Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `launched_at` into Excel's Date format
+  * A new column was created named `Date Created Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `launched_at` into Excel's Date format
 
-  * Create a new column named `Date Ended Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `deadline` into Excel's Date format
+  * A new column was created named `Date Ended Conversion` that use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `deadline` into Excel's Date format
 
   ![Outcomes Based on Launch Date](Images/LaunchDateOutcomes.PNG)
 
-  * Create a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
+  * A new sheet was created with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
 
-  * Create a pivot chart line graph that visualizes this new table.
+  * A pivot chart line graph was created that visualizes this new table.
 
-* A report in Microsoft Word was creted to answer the following questions...
+* A report in Microsoft Word was created to answer the following questions...
 
 1. What are three conclusions we can make about Kickstarter campaigns given the provided data?
 2. What are some of the limitations of this dataset?
@@ -60,7 +60,7 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
 
 ## Additional Analysis
 
-* A new sheet with 8 columns were created, they are: `Goal`, `Number Successful`, `Number Failed`, `Number Canceled`, `Total Projects`, `Percentage Successful`, `Percentage Failed`, and `Percentage Canceled`
+* A new sheet with 8 columns was created, they are: `Goal`, `Number Successful`, `Number Failed`, `Number Canceled`, `Total Projects`, `Percentage Successful`, `Percentage Failed`, and `Percentage Canceled`
 
   * In the `goal` column, twelve rows were created with the following headers...
 
@@ -79,7 +79,7 @@ Since getting funded on Kickstarter requires meeting or exceeding the project's 
 
     ![Goal Outcomes](Images/GoalOutcomes.PNG)
 
-  * The total successful, failed, and canceled projects that were create with goals within those ranges listed above were counted. The `Number Successful`, `Number Failed`, and `Number Canceled` columns were populated with this data.
+  * The total successful, failed, and canceled projects that were created with goals within those ranges listed above were counted. The `Number Successful`, `Number Failed`, and `Number Canceled` columns were populated with this data.
 
   * Each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns were added to populate the `Total Projects` column. Then, using a mathematic formulae, the percentage of projects which were successful, failed, or were canceled per goal range were found.
 
